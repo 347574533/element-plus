@@ -6,12 +6,39 @@ settings:
 
 catalogs:
   default:
+    '@ctrl/tinycolor':
+      specifier: ^3.4.1
+      version: 3.6.1
+    '@element-plus/icons-vue':
+      specifier: ^2.3.2
+      version: 2.3.2
+    '@popperjs/core':
+      specifier: npm:@sxzz/popperjs-es@^2.11.7
+      version: 2.11.7
+    '@vitejs/plugin-vue':
+      specifier: ^5.1.4
+      version: 5.2.4
+    '@vitejs/plugin-vue-jsx':
+      specifier: ^4.0.1
+      version: 4.2.0
     '@vue/server-renderer':
       specifier: ^3.5.22
       version: 3.5.25
+    '@vue/shared':
+      specifier: ^3.5.22
+      version: 3.5.25
+    '@vue/test-utils':
+      specifier: ^2.4.6
+      version: 2.4.6
     '@vueuse/core':
       specifier: ^10.11.0
       version: 10.11.1
+    lodash-unified:
+      specifier: ^1.0.3
+      version: 1.0.3
+    normalize-wheel-es:
+      specifier: ^1.2.0
+      version: 1.2.0
     vue:
       specifier: ^3.5.22
       version: 3.5.25
@@ -115,8 +142,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       '@pnpm/types':
-        specifier: ^8.4.0
-        version: 8.10.0
+        specifier: ^12.2.0
+        version: 12.2.0
       '@types/fs-extra':
         specifier: ^9.0.13
         version: 9.0.13
@@ -351,8 +378,8 @@ importers:
         version: 0.2.15
     devDependencies:
       '@pnpm/types':
-        specifier: ^8.4.0
-        version: 8.10.0
+        specifier: ^12.2.0
+        version: 12.2.0
       tsx:
         specifier: ^4.19.3
         version: 4.21.0
@@ -2331,9 +2358,9 @@ packages:
     peerDependencies:
       '@pnpm/logger': ^4.0.0
 
-  '@pnpm/types@8.10.0':
-    resolution: {integrity: sha512-A4pcNNvFJdkMXArEjTCOIYNL2VxD4uBynWZ6cBIELXb5qJ0tUzwKsaSz4J953I0rQFqnsFpUYqaWIquI10W1sw==}
-    engines: {node: '>=14.6'}
+  '@pnpm/types@12.2.0':
+    resolution: {integrity: sha512-5RtwWhX39j89/Tmyv2QSlpiNjErA357T/8r1Dkg+2lD3P7RuS7Xi2tChvmOC3VlezEFNcWnEGCOeKoGRkDuqFA==}
+    engines: {node: '>=18.12'}
 
   '@pnpm/types@8.7.0':
     resolution: {integrity: sha512-2j4ldzfOQNa3EZfJEmJrBQefE+OWBMgAoWWnVeXi5B7itVHRcg27Np+q0FxzuZE//O0N44WKH4WJG53sBsUqCQ==}
@@ -9037,6 +9064,7 @@ packages:
 
   whatwg-encoding@1.0.5:
     resolution: {integrity: sha512-b5lim54JOPN9HtzvK9HFXvBma/rnfFeqsic0hSpjtDbVxR3dJKLc+KB4V6GgiGOvl7CY/KNh8rxSo9DKQrnUEw==}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@2.3.0:
     resolution: {integrity: sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==}
@@ -11245,7 +11273,7 @@ snapshots:
       '@pnpm/types': 8.7.0
       symlink-dir: 5.2.1
 
-  '@pnpm/types@8.10.0': {}
+  '@pnpm/types@12.2.0': {}
 
   '@pnpm/types@8.7.0': {}
 
@@ -12423,7 +12451,7 @@ snapshots:
       '@yarnpkg/parsers': 3.0.3
       chalk: 4.1.2
       clipanion: 4.0.0-rc.4(typanion@3.14.0)
-      cross-spawn: 7.0.3
+      cross-spawn: 7.0.6
       fast-glob: 3.3.3
       micromatch: 4.0.8
       tslib: 2.8.1
