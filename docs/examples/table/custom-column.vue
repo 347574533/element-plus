@@ -12,7 +12,7 @@
       <template #default="scope">
         <el-popover effect="light" trigger="hover" placement="top" width="auto">
           <template #default>
-            <div>name: {{ scope.row.name }}</div>
+            <div>name: {{ scope.row.name }}100</div>
             <div>address: {{ scope.row.address }}</div>
           </template>
           <template #reference>
